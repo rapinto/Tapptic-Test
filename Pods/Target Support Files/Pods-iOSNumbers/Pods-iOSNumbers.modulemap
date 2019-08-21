@@ -1,0 +1,6 @@
+framework module Pods_iOSNumbers {
+  umbrella header "Pods-iOSNumbers-umbrella.h"
+
+  export *
+  module * { export * }
+}
