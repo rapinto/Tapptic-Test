@@ -17,11 +17,13 @@ class CustomSplitViewController : UISplitViewController, UISplitViewControllerDe
         
         self.delegate = self
         
-        self.preferredDisplayMode = .primaryOverlay
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            self.preferredDisplayMode = .primaryOverlay
+        }
     }
     
     // MARK: UISplitViewControllerDelegate
-    
+//
     func splitViewController(_ splitViewController: UISplitViewController, collapseSecondary secondaryViewController: UIViewController, onto primaryViewController: UIViewController) -> Bool {
         return true
     }

@@ -25,6 +25,7 @@
 		BFC6DA6A230C1F14000A4B4D /* DetailViewController+Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC6DA69230C1F14000A4B4D /* DetailViewController+Interactor.swift */; };
 		BFC6DA6C230C2438000A4B4D /* DetailViewController+Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC6DA6B230C2438000A4B4D /* DetailViewController+Presenter.swift */; };
 		BFFF5D2C230D3B7E00DC9017 /* CustomSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFF5D2B230D3B7E00DC9017 /* CustomSplitViewController.swift */; };
+		BFFF5D2E230D453B00DC9017 /* CustomRequestRetrier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFF5D2D230D453B00DC9017 /* CustomRequestRetrier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		BFC6DA69230C1F14000A4B4D /* DetailViewController+Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailViewController+Interactor.swift"; sourceTree = "<group>"; };
 		BFC6DA6B230C2438000A4B4D /* DetailViewController+Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailViewController+Presenter.swift"; sourceTree = "<group>"; };
 		BFFF5D2B230D3B7E00DC9017 /* CustomSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSplitViewController.swift; sourceTree = "<group>"; };
+		BFFF5D2D230D453B00DC9017 /* CustomRequestRetrier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRequestRetrier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 				BFC6DA63230C1D42000A4B4D /* Detail */,
 				BFC6DA53230BEAEC000A4B4D /* Master */,
 				BFFF5D2B230D3B7E00DC9017 /* CustomSplitViewController.swift */,
+				BFFF5D2D230D453B00DC9017 /* CustomRequestRetrier.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -422,6 +425,7 @@
 				BFFF5D2C230D3B7E00DC9017 /* CustomSplitViewController.swift in Sources */,
 				BFC6DA2F230BE75A000A4B4D /* AppDelegate.swift in Sources */,
 				BFC6DA58230BEB19000A4B4D /* ElementTableViewCell.swift in Sources */,
+				BFFF5D2E230D453B00DC9017 /* CustomRequestRetrier.swift in Sources */,
 				BFC6DA62230BFAAF000A4B4D /* MasterViewController+Presenter.swift in Sources */,
 				BFC6DA51230BE8F7000A4B4D /* Element.swift in Sources */,
 				BFC6DA60230BFAA1000A4B4D /* MasterViewController+Interactor.swift in Sources */,

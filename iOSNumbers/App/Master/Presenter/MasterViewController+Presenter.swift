@@ -94,7 +94,6 @@ extension MasterViewController {
                                   scrollPosition: .none)
         
         // update detail
-        self.tableView?.delegate?.tableView?(self.tableView,
-                                             didSelectRowAt: indexPath)
+        self.updateDelegate(indexPath: indexPath)
     }
 }

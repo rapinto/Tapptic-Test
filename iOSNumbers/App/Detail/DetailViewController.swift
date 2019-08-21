@@ -30,7 +30,7 @@ class DetailViewController : UIViewController, MasterViewControllerDelegate {
             self.requestData(element: elem)
         }
     }
-
+    
     // MARK: MasterViewControllerDelegate
     
     func select(element : Element) {
