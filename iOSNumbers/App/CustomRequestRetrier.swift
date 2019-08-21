@@ -22,36 +22,35 @@ class CustomRequestRetrier : RequestRetrier {
             return
         }
         
-        guard let rootViewController = UIApplication.shared.delegate?.window??.rootViewController else {
-            completion(false, 0)
-            return
-        }
-        
-        let alertController = UIAlertController(title: "Network error",
-                                                message: "Retry?",
-                                                preferredStyle: .alert)
-        
-        let yesAction = UIAlertAction(title: "Yes",
-                                      style: .default,
-                                      handler: { action in
-                                        completion(true, 2)
-        })
-        alertController.addAction(yesAction)
-        
-        
-        let noAction = UIAlertAction(title: "No",
-                                     style: .cancel,
-                                     handler: { action in
-                                        alertController.dismiss(animated: true, completion: nil)
-        })
-        alertController.addAction(noAction)
-        
         DispatchQueue.main.async {
+            guard let rootViewController = UIApplication.shared.delegate?.window??.rootViewController else {
+                completion(false, 0)
+                return
+            }
+            
+            let alertController = UIAlertController(title: "Network error",
+                                                    message: "Retry?",
+                                                    preferredStyle: .alert)
+            
+            let yesAction = UIAlertAction(title: "Yes",
+                                          style: .default,
+                                          handler: { action in
+                                            completion(true, 2)
+            })
+            alertController.addAction(yesAction)
+            
+            
+            let noAction = UIAlertAction(title: "No",
+                                         style: .cancel,
+                                         handler: { action in
+                                            alertController.dismiss(animated: true, completion: nil)
+            })
+            alertController.addAction(noAction)
+            
             rootViewController.present(alertController,
                                        animated: true,
                                        completion: nil)
         }
-        
     }
     
     // MARK: Private
